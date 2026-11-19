@@ -2,20 +2,20 @@
 
 High fidelity prototype for **ITEC 3230**. A web based workout manager that will allow any user to create or receive a workout based on their goals, the application will help users see their weekly workout schedule, log their workouts and trak their progress over time. 
 
-**Live Site** https://yur1o.github.io/FitPlan/
+**Live Site:** https://yur1o.github.io/FitPlan/
 
 ## Features
 
-| **Page** | **Description** |
+| Page | Description |
 |------|-------------|
-| Welcome & Setup | Answer 4 quick questions (gender, weight, frequency, goals) and get a generated plan for your workout through out the week. |
+| Welcome & Setup | Answer 4 quick questions (gender, weight, frequency, goals) and get a generated plan for your workout throughout the week. |
 | Today | See today's workout, add or remove exercises, start, or change a log you already saved. |
-| Workout Log | Enter the weight and reps for each set and tick the ones you finished.
+| Workout Log | Enter the weight and reps for each set and tick the ones you finished. |
 | Schedule | See your workout schedule in the calendar. |
 | Plans | Switch plans, delete, or build your own. |
-| Progresss | Workout streak, workouts done, total volume, weekly volume chart, goals, and personal bests. |
+| Progress | Workout streak, workouts done, total volume, weekly volume chart, goals, and personal bests. |
 | Exercise Index | Search or browse exercises. |
-| Settings | Switch between lbs and kg, workout reminder notification, reset demo |
+| Settings | Switch between lbs and kg, workout reminder notification, reset demo. |
 
 ## Members
 
