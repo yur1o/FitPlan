@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FitPlan · Progress</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="progress">
+    <header class="top">
+      <div class="top-in">
+        <a class="brand" href="index.html" aria-label="FitPlan home"
+          ><span class="mark"
+            ><svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M2 12h1" />
+              <path d="M6 8h-2a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h2" />
+              <path
+                d="M6 7v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-10a1 1 0 0 0 -1 -1h-1a1 1 0 0 0 -1 1z"
+              />
+              <path d="M9 12h6" />
+              <path
+                d="M15 7v10a1 1 0 0 0 1 1h1a1 1 0 0 0 1 -1v-10a1 1 0 0 0 -1 -1h-1a1 1 0 0 0 -1 1z"
+              />
+              <path d="M18 8h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2" />
+              <path d="M22 12h-1" /></svg></span
+          >FitPlan</a
+        >
+        <a
+          class="icon-btn"
+          href="exercises.html"
+          aria-label="Search exercises"
+          title="Exercises Index"
+          ><svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.3-4.3" /></svg
+        ></a>
+        <button
+          class="icon-btn"
+          data-a="settings"
+          aria-label="Settings"
+          title="Settings"
+        >
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <section id="page" hidden>
+        <div class="page-head">
+          <div>
+            <h1>Your Progress</h1>
+            <p class="muted" id="prog-sub"></p>
+          </div>
+        </div>
+        <div class="grid3">
+          <div class="stat">
+            <div class="k">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-3 2-5 3-7 1 2 2 3 3 3 0-3-1-5 0-8z"
+                />
+              </svg>
+              Streak
+            </div>
+            <div class="v">
+              <span id="st-streak">0</span>
+              <small id="st-streak-u">workouts</small>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="k">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Workouts done
+            </div>
+            <div class="v" id="st-done">0</div>
+          </div>
+          <div class="stat">
+            <div class="k">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 7v10M18 7v10M3 10v4M21 10v4M6 12h12" />
+              </svg>
+              Total volume
+            </div>
+            <div class="v">
+              <span id="st-vol">0</span> <small class="unit-label">kg</small>
+            </div>
+          </div>
+        </div>
+        <div class="card chart" style="margin-top: 14px">
+          <h2>Training volume per workout</h2>
+          <p class="small muted">
+            Reps × weight added up for each logged workout (<span
+              class="unit-label"
+              >kg</span
+            >).
+          </p>
+          <div id="chart"></div>
+        </div>
+        <div class="grid3" style="margin-top: 14px">
+          <div class="card" style="margin: 0">
+            <h2>Your Goals</h2>
+            <div id="goals"></div>
+          </div>
+          <div class="card" style="margin: 0">
+            <h2>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z" />
+                <path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3" />
+              </svg>
+              Personal bests
+            </h2>
+            <div id="pbs"></div>
+          </div>
+          <div class="card" style="margin: 0">
+            <h2>Completed workouts</h2>
+            <div id="counts"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sub" hidden></section>
+    </main>
+    <nav class="nav" aria-label="Main">
+      <div class="nav-in">
+        <a href="index.html"
+          ><svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M3 11l9-8 9 8" />
+            <path d="M5 10v10h14V10" /></svg
+          ><span>Today</span></a
+        >
+        <a href="schedule.html"
+          ><svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="3" y="5" width="18" height="16" rx="2" />
+            <path d="M16 3v4M8 3v4M3 10h18" /></svg
+          ><span>Schedule</span></a
+        >
+        <a href="plans.html"
+          ><svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="5" y="3" width="14" height="18" rx="2" />
+            <path d="M9 8h6M9 12h6M9 16h4" /></svg
+          ><span>Plans</span></a
+        >
+        <a href="progress.html" aria-current="page"
+          ><svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M3 3v18h18" />
+            <path d="M7 15l4-4 3 3 5-6" /></svg
+          ><span>Progress</span></a
+        >
+      </div>
+    </nav>
+
+    <div class="overlay" id="settings" hidden>
+      <div
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="set-title"
+      >
+        <h2 id="set-title">Settings</h2>
+        <div class="setting">
+          <div>
+            <b>Profile</b>
+            <div class="small muted" id="set-profile">
+              No profile yet. Answer the questionnaire to create one.
+            </div>
+          </div>
+        </div>
+        <div class="setting">
+          <div>
+            <b>Units</b>
+            <div class="small muted">
+              Switching converts your plan, logs and personal bests
+            </div>
+          </div>
+          <div
+            class="seg"
+            role="group"
+            aria-label="Weight unit"
+            style="margin: 0"
+          >
+            <button data-a="unit" data-u="lbs" aria-pressed="false">lbs</button
+            ><button data-a="unit" data-u="kg" aria-pressed="true">kg</button>
+          </div>
+        </div>
+        <div class="setting">
+          <div>
+            <b>Workout reminders</b>
+            <div class="small muted">Notify me on workout days</div>
+          </div>
+          <button
+            class="switch"
+            id="set-notif"
+            data-a="notif"
+            aria-pressed="true"
+            aria-label="Workout reminders"
+          ></button>
+        </div>
+        <div class="setting">
+          <div>
+            <b>Privacy</b>
+            <div class="small muted">
+              Your workout data is stored only in this browser and is never
+              shared.
+            </div>
+          </div>
+        </div>
+        <div class="setting">
+          <div>
+            <b>Reset demo</b>
+            <div class="small muted">
+              Clears everything and starts as a first-time user (Alt+Shift+R)
+            </div>
+          </div>
+          <button class="btn sm danger" data-a="reset">Reset</button>
+        </div>
+        <div class="acts">
+          <button class="btn ghost" data-a="close">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay" id="confirm" hidden>
+      <div
+        class="modal"
+        role="alertdialog"
+        aria-modal="true"
+        aria-labelledby="cf-title"
+        aria-describedby="cf-msg"
+      >
+        <h2 id="cf-title"></h2>
+        <p id="cf-msg" class="muted"></p>
+        <div class="acts">
+          <button class="btn ghost" data-a="close">Cancel</button
+          ><button class="btn" id="cf-ok" data-a="ok">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+    <noscript
+      ><p style="padding: 20px">
+        FitPlan needs JavaScript enabled to save your plan and workouts.
+      </p></noscript
+    >
+    <script src="js/app.js"></script>
+  </body>
+</html>
